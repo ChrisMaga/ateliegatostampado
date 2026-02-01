@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Search, Heart, User, Menu, X } from "lucide-react";
+import logoUrl from '../assets/logo.svg';
 
 export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -10,8 +11,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img
-            src="./src/assets/logo.svg"
-            alt="Gato Stampado"
+            src={logoUrl} alt="Logo GatoStampado"
             className="h-12"
           />
         </div>

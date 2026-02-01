@@ -1,9 +1,11 @@
+import heroBg from '../assets/hero-bg.jpg';
+
 export default function Hero() {
   return (
     // 1. Definimos o background na section principal
     <section 
       className="relative h-150 flex items-center px-6 md:px-20 bg-cover bg-center"
-      style={{ backgroundImage: "url('./src/assets/hero-bg.jpg')" }}
+      style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* 2. Overlay: Uma camada escura ou clara para dar leitura ao texto */}
       <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px] bg-position-[50%]"></div>
