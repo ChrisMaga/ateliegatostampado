@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  /* Adicionando sua paleta de cores aqui */
+  --color-bege-claro: #FBFAF8;
+  --color-bege-medio: #F7F6F1;
+  --color-nude: #F5EAE7;
+  --color-rosa-claro: #ECC6CD;
+  --color-rosa-escuro: #CE7E8B;
+  --color-marrom-suave: #7F726A;
+  --color-cafe: #38271D;
+  
+   --font-serif: "Playfair Display", serif;
+   --font-second: "Nunito";
+}
