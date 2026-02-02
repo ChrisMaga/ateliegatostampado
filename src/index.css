@@ -2,14 +2,13 @@
 
 @theme {
   /* Adicionando sua paleta de cores aqui */
-  --color-bege-claro: #FBFAF8;
-  --color-bege-medio: #F7F6F1;
-  --color-nude: #F5EAE7;
-  --color-rosa-claro: #ECC6CD;
-  --color-rosa-escuro: #CE7E8B;
-  --color-marrom-suave: #7F726A;
-  --color-cafe: #38271D;
+  --color-pink: #E61E64;
+  --color-id: #00A9A4;
+  --color-bg: #F9F9F9;
+  --color-text: #4A4A4A;
+  --color-secundary: #FFD100;
+
   
-   --font-serif: "Playfair Display", serif;
-   --font-second: "Nunito";
+   --font-primary: "Quicksand";
+   --font-second: "Pacifico";
 }

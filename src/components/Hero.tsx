@@ -1,4 +1,4 @@
-import heroBg from '../assets/hero-bg.jpg';
+import heroBg from '../assets/bg-hero.jpg';
 
 export default function Hero() {
   return (
@@ -12,20 +12,20 @@ export default function Hero() {
 
       {/* 3. Conteúdo: Precisa ser 'relative' para ficar acima do overlay */}
       <div className="relative z-10 max-w-2xl">
-        <h1 className="text-5xl md:text-6xl font-serif text-cafe font-bold leading-tight">
+        <h1 className="text-5xl md:text-6xl font-second text-text font-light leading-tight">
           Peças únicas <br />
-          <span className="text-rosa-escuro text-6xl md:text-7xl">Artesanais</span>
+          <span className="text-pink text-6xl md:text-7xl">Artesanais</span>
         </h1>
         
-        <p className="mt-6 text-marrom-suave text-lg md:text-xl max-w-lg leading-relaxed font-medium">
+        <p className="mt-6 text-text text-lg md:text-xl max-w-lg leading-relaxed font-medium font-primary">
           Descubra a magia do artesanato brasileiro. Cada peça conta uma história de amor e dedicação.
         </p>
         
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <button className="bg-rosa-escuro text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition shadow-lg text-lg">
+          <button className="bg-pink text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition shadow-lg text-lg">
             Explorar Catálogo
           </button>
-          <button className="bg-white/40 border-2 border-rosa-escuro text-rosa-escuro px-10 py-4 rounded-full font-bold hover:bg-rosa-escuro hover:text-white transition text-lg">
+          <button className="bg-white/40 border-2 border-pink text-pink px-10 py-4 rounded-full font-bold hover:bg-bg/40 hover:text-id hover:border-id transition text-lg">
             Conheça o Ateliê
           </button>
         </div>

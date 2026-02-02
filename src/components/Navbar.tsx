@@ -6,7 +6,7 @@ export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
 
   return (
-    <nav className="bg-bege-claro relative shadow-sm font-['Nunito']">
+    <nav className="bg-bg relative shadow-sm font-primary">
       <div className="flex items-center justify-between px-6 md:px-10 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -17,29 +17,29 @@ export default function Navbar() {
         </div>
 
         {/* Links Centrais */}
-        <ul className="hidden md:flex items-center gap-8 text-cafe font-medium">
-          <li className="hover:text-rosa-escuro cursor-pointer transition">
+        <ul className="hidden md:flex items-center gap-8 text-text font-medium">
+          <li className="hover:text-pink cursor-pointer transition">
             Início
           </li>
-          <li className="hover:text-rosa-escuro cursor-pointer transition">
+          <li className="hover:text-pink cursor-pointer transition">
             Catálogo
           </li>
-          <li className="hover:text-rosa-escuro cursor-pointer transition">
+          <li className="hover:text-pink cursor-pointer transition">
             Sobre
           </li>
-          <li className="hover:text-rosa-escuro cursor-pointer transition">
+          <li className="hover:text-pink cursor-pointer transition">
             Blog
           </li>
-          <li className="hover:text-rosa-escuro cursor-pointer transition">
+          <li className="hover:text-pink cursor-pointer transition">
             Contato
           </li>
         </ul>
 
         {/* Ícones da Direita */}
-        <div className="flex items-center gap-4 text-cafe">
-          <Search size={20} className="cursor-pointer hover:text-rosa-escuro" />
-          <User size={20} className="cursor-pointer hover:text-rosa-escuro" />
-          <Heart size={20} className="cursor-pointer hover:text-rosa-escuro hidden md:flex" />
+        <div className="flex items-center gap-10 text-text">
+          <Search size={20} className="cursor-pointer hover:text-pink" />
+          <User size={20} className="cursor-pointer hover:text-pink" />
+          <Heart size={20} className="cursor-pointer hover:text-pink hidden md:flex" />
 
           {/* {botão hamburguer - mobile} */}
           <button
@@ -52,14 +52,14 @@ export default function Navbar() {
       </div>
     {/* Menu Mobile (Dropdown) */}
       {menuAberto && (
-        <div className="md:hidden bg-bege-claro border-t border-nude p-6 absolute w-full z-50 shadow-lg">
-          <ul className="flex flex-col gap-6 text-cafe font-medium">
-            <li className="hover:text-rosa-escuro">Início</li>
-            <li className="hover:text-rosa-escuro">Catálogo</li>
-            <li className="hover:text-rosa-escuro">Sobre</li>
-            <li className="hover:text-rosa-escuro">Blog</li>
-            <li className="hover:text-rosa-escuro">Contato</li>
-            <li className="hover:text-rosa-escuro flex gap-4 pt-4 border-t border-nude">
+        <div className="md:hidden bg-bg border-t border-bg p-6 absolute w-full z-50 shadow-lg">
+          <ul className="flex flex-col gap-6 text-text font-medium">
+            <li className="hover:text-pink">Início</li>
+            <li className="hover:text-pink">Catálogo</li>
+            <li className="hover:text-pink">Sobre</li>
+            <li className="hover:text-pink">Blog</li>
+            <li className="hover:text-pink">Contato</li>
+            <li className="hover:text-pink flex gap-4 pt-4 border-t border-text">
               <Heart size={20} /> Meus Favoritos
             </li>
           </ul>
