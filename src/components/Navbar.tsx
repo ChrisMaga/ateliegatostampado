@@ -17,7 +17,7 @@ export default function Navbar() {
         </div>
 
         {/* Links Centrais */}
-        <ul className="hidden md:flex items-center gap-8 text-text font-medium">
+        <ul className="hidden md:flex items-center gap-8 text-coffe font-bold">
           <li className="hover:text-pink cursor-pointer transition">
             Início
           </li>
@@ -36,7 +36,7 @@ export default function Navbar() {
         </ul>
 
         {/* Ícones da Direita */}
-        <div className="flex items-center gap-10 text-text">
+        <div className="flex items-center gap-10 text-coffe">
           <Search size={20} className="cursor-pointer hover:text-pink" />
           <User size={20} className="cursor-pointer hover:text-pink" />
           <Heart size={20} className="cursor-pointer hover:text-pink hidden md:flex" />
@@ -53,7 +53,7 @@ export default function Navbar() {
     {/* Menu Mobile (Dropdown) */}
       {menuAberto && (
         <div className="md:hidden bg-bg border-t border-bg p-6 absolute w-full z-50 shadow-lg">
-          <ul className="flex flex-col gap-6 text-text font-medium">
+          <ul className="flex flex-col gap-6 text-coffe font-medium">
             <li className="hover:text-pink">Início</li>
             <li className="hover:text-pink">Catálogo</li>
             <li className="hover:text-pink">Sobre</li>

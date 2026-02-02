@@ -12,12 +12,12 @@ export default function Hero() {
 
       {/* 3. Conteúdo: Precisa ser 'relative' para ficar acima do overlay */}
       <div className="relative z-10 max-w-2xl">
-        <h1 className="text-5xl md:text-6xl font-second text-text font-light leading-tight">
+        <h1 className="text-5xl md:text-6xl font-third text-coffe font-light leading-tight">
           Peças únicas <br />
           <span className="text-pink text-6xl md:text-7xl">Artesanais</span>
         </h1>
         
-        <p className="mt-6 text-text text-lg md:text-xl max-w-lg leading-relaxed font-medium font-primary">
+        <p className="mt-6 text-coffe text-lg md:text-xl max-w-lg leading-relaxed font-medium font-primary">
           Descubra a magia do artesanato brasileiro. Cada peça conta uma história de amor e dedicação.
         </p>
         
