@@ -35,10 +35,10 @@ export default function Info() {
             </div>
             
             <div className="flex flex-col items-center md:items-start gap-1 mt-2 md:mt-0">
-              <h3 className="text-black font-bold text-lg leading-tight">
+              <h3 className="text-coffe font-third font-semibold text-lg leading-tight">
                 {item.title}
               </h3>
-              <p className="text-text text-sm md:text-base leading-relaxed max-w-[200px]">
+              <p className="text-coffe text-sm md:text-base leading-relaxed max-w-[200px]">
                 {item.desc}
               </p>
             </div>

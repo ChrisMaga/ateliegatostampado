@@ -6,10 +6,12 @@
   --color-id: #00A9A4;
   --color-bg: #F9F9F9;
   --color-bg-secondary: #F7F6F1;
-  --color-text: #4A4A4A;
+  --color-gray: #4A4A4A;
+  --color-coffe: #38271D;
   --color-secundary: #FFD100;
 
   
    --font-primary: "Quicksand";
-   --font-second: "Pacifico";
+   --font-secondary: "Pacifico";
+   --font-third: "DM Serif Display";
 }
