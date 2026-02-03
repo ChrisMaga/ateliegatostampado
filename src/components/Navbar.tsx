@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Search, Heart, User, Menu, X } from "lucide-react";
 import logoUrl from '../assets/logo.svg';
 
@@ -19,13 +20,13 @@ export default function Navbar() {
         {/* Links Centrais */}
         <ul className="hidden md:flex items-center gap-8 text-coffe font-bold">
           <li className="hover:text-pink cursor-pointer transition">
-            Início
+            <Link to="/">Início</Link>
           </li>
           <li className="hover:text-pink cursor-pointer transition">
-            Catálogo
+            <Link to="/catalogo">Catálogo</Link>
           </li>
           <li className="hover:text-pink cursor-pointer transition">
-            Sobre
+            <Link to="/about">Sobre</Link>
           </li>
           <li className="hover:text-pink cursor-pointer transition">
             Blog
