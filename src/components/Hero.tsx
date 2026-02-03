@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroBg from '../assets/bg-hero.jpg';
 
 export default function Hero() {
@@ -23,7 +24,9 @@ export default function Hero() {
         
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <button className="bg-pink text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition shadow-lg text-lg">
-            Explorar Catálogo
+            
+            <Link to="/Catalogo">
+            Explorar Catálogo</Link>
           </button>
           <button className="bg-white/40 border-2 border-pink text-pink px-10 py-4 rounded-full font-bold hover:bg-bg/40 hover:text-id hover:border-id transition text-lg">
             Conheça o Ateliê
