@@ -18,14 +18,14 @@ export default function Home() {
 
       {/* CTA FINAL (CHAMADA PARA AÇÃO) */}
       <section className="bg-pink/5 py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold text-coffe mb-4">
-          Quer um amigurumi personalizado?
+        <h2 className="text-3xl font-secondary text-coffe mb-5">
+          Quer uma peça personalizada?
         </h2>
         <p className="text-gray mb-8">
           Transformo sua ideia em pontos de crochê.
         </p>
         <Link
-          to="/contato"
+          to="https://wa.me/5511982783096"
           className="border-2 border-pink text-pink hover:bg-pink hover:text-white px-10 py-3 rounded-full font-bold transition-all"
         >
           Fale Conosco no WhatsApp
