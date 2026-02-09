@@ -1,4 +1,3 @@
-import { ShoppingCart, Heart } from "lucide-react";
 import { useState } from "react";
 
 export default function Catalogo() {
@@ -78,10 +77,6 @@ export default function Catalogo() {
                 </span>
               )}
 
-              {/* Botão de Favoritar */}
-              <button className="absolute top-4 right-4 z-10 p-2 bg-white/80 backdrop-blur-sm rounded-full text-text hover:text-pink transition-colors shadow-sm">
-                <Heart size={18} />
-              </button>
 
               {/* Área da Imagem */}
               <div className="aspect-square bg-pink/5 flex items-center justify-center relative overflow-hidden">
@@ -102,11 +97,8 @@ export default function Catalogo() {
                   <div className="flex flex-col">
                     <span className="text-[10px] text-text uppercase">Valor unitário</span>
                     <span className="text-xl font-bold text-black">R$ {produto.preco}</span>
-                  </div>
-                  
-                  <button className="bg-pink text-white p-3 rounded-2xl hover:bg-pink/80 transition-all active:scale-95 shadow-lg shadow-pink/10">
-                    <ShoppingCart size={20} />
-                  </button>
+                  </div>                  
+
                 </div>
               </div>
             </div>
