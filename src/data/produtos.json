@@ -11,14 +11,14 @@
     "id": 2,
     "nome": "Foguete Amigurumi",
     "preco": "75,00",
-    "categoria": "Geek",
+    "categoria": "Amigurumis",
     "tag": "Novo",
     "imagem": "/assets/produtos/foguete.webp"
   },
   {
     "id": 3,
     "nome": "Kit Porta Joias e Chaveiro",
-    "preco": "120,00",
+    "preco": "65,00",
     "categoria": "Fio de Malha",
     "tag": "Acessórios",
     "imagem": "/assets/produtos/kitPortaJoiasChaveiro.webp"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "nome": "Sousplat Tradicional",
-    "preco": "110,00",
+    "preco": "55,00",
     "categoria": "Mesa Posta",
     "tag": "Exclusivo",
     "imagem": "/assets/produtos/sousplatGrande.webp"

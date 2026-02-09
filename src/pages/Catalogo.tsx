@@ -1,40 +1,11 @@
 import { useState } from "react";
+import produtosData from "../data/produtos.json";
 
 export default function Catalogo() {
-  // Simulação de produtos - Depois você pode mover isso para um arquivo .json ou API
-  const produtos = [
-    { 
-      id: 1, 
-      nome: "Raposa de Crochê Amigurumi", 
-      preco: "89,90", 
-      categoria: "Amigurumis", 
-      tag: "Mais Vendido" 
-    },
-    { 
-      id: 2, 
-      nome: "Chaveiro Joystick Geek", 
-      preco: "25,00", 
-      categoria: "Geek", 
-      tag: "Novo" 
-    },
-    { 
-      id: 3, 
-      nome: "Bolsa de Ombro em Macramê", 
-      preco: "120,00", 
-      categoria: "Acessórios", 
-      tag: null 
-    },
-    { 
-      id: 4, 
-      nome: "Gatinho com Estampa Floral", 
-      preco: "110,00", 
-      categoria: "Amigurumis", 
-      tag: "Exclusivo" 
-    },
-  ];
+     const produtos = produtosData;
 
   const [filtro, setFiltro] = useState("Todos");
-  const categorias = ["Todos", "Amigurumis", "Geek", "Acessórios"];
+  const categorias = ["Todos", "Amigurumis", "Geek", "Acessórios", "Mesa Posta"];
 
   const produtosFiltrados = filtro === "Todos" 
     ? produtos 
@@ -77,13 +48,19 @@ export default function Catalogo() {
                 </span>
               )}
 
-
               {/* Área da Imagem */}
               <div className="aspect-square bg-pink/5 flex items-center justify-center relative overflow-hidden">
-                <div className="text-pink/10 font-bold uppercase tracking-widest -rotate-12 select-none text-2xl">
-                  Gato Stampado
-                </div>
-                {/* <img src={produto.imagem} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" /> */}
+                {produto.imagem ? (
+                  <img 
+                    src={produto.imagem} 
+                    alt={produto.nome} // ← Adiciona alt para acessibilidade
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                  />
+                ) : (
+                  <div className="text-pink/10 font-bold uppercase tracking-widest -rotate-12 select-none text-2xl">
+                    Gato Stampado
+                  </div>
+                )}
               </div>
 
               {/* Info do Produto */}
@@ -98,7 +75,6 @@ export default function Catalogo() {
                     <span className="text-[10px] text-text uppercase">Valor unitário</span>
                     <span className="text-xl font-bold text-black">R$ {produto.preco}</span>
                   </div>                  
-
                 </div>
               </div>
             </div>

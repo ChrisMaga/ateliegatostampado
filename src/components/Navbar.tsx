@@ -6,7 +6,7 @@ import logoUrl from "../assets/logo.svg";
 export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
   const location = useLocation();
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const navLinks = useMemo(
     () => [
@@ -18,7 +18,7 @@ export default function Navbar() {
       { label: "Blog", to: null },
       { label: "Contato", to: "/contato" },
     ],
-    []
+    [],
   );
 
   function fecharMenu() {
@@ -35,9 +35,13 @@ export default function Navbar() {
   useEffect(() => {
     if (!menuAberto) return;
 
-    function handleClickOutside(e) {
+    function handleClickOutside(e: MouseEvent) {
       if (!menuRef.current) return;
-      if (!menuRef.current.contains(e.target)) {
+
+      const target = e.target as Node | null;
+      if (!target) return;
+
+      if (!menuRef.current.contains(target)) {
         fecharMenu();
       }
     }
@@ -50,18 +54,28 @@ export default function Navbar() {
     <nav className="bg-bg sticky top-0 z-40 shadow-md font-primary">
       <div className="flex items-center justify-between px-6 md:px-10 py-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2" aria-label="Ir para a página inicial">
+        <Link
+          to="/"
+          className="flex items-center gap-2"
+          aria-label="Ir para a página inicial"
+        >
           <img src={logoUrl} alt="Logo GatoStampado" className="h-12" />
         </Link>
 
         {/* Links Desktop */}
         <ul className="hidden md:flex items-center gap-8 text-coffe font-bold">
           {navLinks.map((item) => (
-            <li key={item.label} className="hover:text-pink cursor-pointer transition">
+            <li
+              key={item.label}
+              className="hover:text-pink cursor-pointer transition"
+            >
               {item.to ? (
                 <Link to={item.to}>{item.label}</Link>
               ) : (
-                <span className="opacity-70 cursor-not-allowed" title="Em breve">
+                <span
+                  className="opacity-70 cursor-not-allowed"
+                  title="Em breve"
+                >
                   {item.label}
                 </span>
               )}
