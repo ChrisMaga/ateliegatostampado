@@ -2,33 +2,85 @@
   {
     "id": 1,
     "nome": "Astronauta Amigurumi",
-    "preco": "89,90",
-    "categoria": "Amigurumis",
+    "categorias": ["Amigurumis"],
     "tag": "Novo",
-    "imagem": "/assets/produtos/astronauta.webp"
+    "imagem": "src/assets/produtos/astronauta.webp",
+    "preco": "89,90",
+    "descricao": "Amigurumi feito à mão com acabamento detalhado. Ideal para presentear ou colecionar.",
+    "materiais": ["Fio 100% algodão", "Enchimento antialérgico", "Olhos com trava de segurança"],
+    "medidas": "Aprox. 18cm de altura",
+    "prazoProducaoDias": 15
   },
   {
     "id": 2,
     "nome": "Foguete Amigurumi",
-    "preco": "75,00",
-    "categoria": "Amigurumis",
+    "categorias": ["Amigurumis"],
     "tag": "Novo",
-    "imagem": "/assets/produtos/foguete.webp"
+    "imagem": "src/assets/produtos/foguete.webp",
+    "preco": "79,90",
+    "descricao": "Amigurumi feito à mão com acabamento detalhado. Ideal para presentear ou colecionar.",
+    "materiais": ["Fio 100% algodão", "Enchimento antialérgico", "Olhos com trava de segurança"],
+    "medidas": "Aprox. 18cm de altura",
+    "prazoProducaoDias": 10
   },
   {
     "id": 3,
     "nome": "Kit Porta Joias e Chaveiro",
-    "preco": "65,00",
-    "categoria": "Fio de Malha",
-    "tag": "Acessórios",
-    "imagem": "/assets/produtos/kitPortaJoiasChaveiro.webp"
+    "categorias": ["Fio de Malha"],
+    "tag": "Novo",
+    "imagem": "src/assets/produtos/kitPortaJoiasChaveiro.webp",
+    "preco": "59,90",
+    "descricao": "Porta Jóias e chaveiro feito à mão com acabamento detalhado. Feito com fio de malha premium. Ideal para presentear ou colecionar. OBS.: O kit é composto por um porta jóias e um chaveiro formato coração.",
+    "materiais": ["Fio de malha Premium"],
+    "medidas": "Aprox. 4cm de altura",
+    "prazoProducaoDias": 10
   },
   {
     "id": 4,
     "nome": "Sousplat Tradicional",
-    "preco": "55,00",
-    "categoria": "Mesa Posta",
+    "categorias": ["Mesa Posta"],
     "tag": "Exclusivo",
-    "imagem": "/assets/produtos/sousplatGrande.webp"
+    "imagem": "src/assets/produtos/sousplatGrande.webp",
+    "preco": "verificar no momento do pedido",
+    "descricao": "Modelo do Jogo Americano: Tradicional. Ideal para presentear ou para deixar seu lar ainda mais elegante.",
+    "materiais": ["Barbante ou Fio 100% Algodão"],
+    "medidas": "Aprox. 40cm",
+    "prazoProducaoDias": 20
+  },
+  {
+    "id": 5,
+    "nome": "Sousplat para Chá/Café",
+    "categorias": ["Mesa Posta"],
+    "tag": "Exclusivo",
+    "imagem": "src/assets/produtos/sousplatPequeno.webp",
+    "preco": "verificar no momento do pedido",
+    "descricao": "Modelo do Jogo Americano: Tradicional. Versão para Chá/Café. Ideal para presentear ou para deixar seu lar ainda mais elegante.",
+    "materiais": ["Barbante ou Fio 100% Algodão"],
+    "medidas": "Aprox. 27cm",
+    "prazoProducaoDias": 20
+  },
+  {
+    "id": 6,
+    "nome": "SuperTuna - K-Pop",
+    "categorias":  ["Amigurumis"],
+    "tag": "Exclusivo",
+    "imagem": "src/assets/produtos/superTuna.webp",
+    "preco": "149,90",
+    "descricao": "Amigurumi feito à mão com acabamento detalhado. Ideal para presentear ou colecionar.",
+    "materiais": ["Fio 100% algodão", "Enchimento antialérgico", "Olhos com trava de segurança"],
+    "medidas": "Aprox. 18cm de altura",
+    "prazoProducaoDias": 15
+  },
+  {
+    "id": 7,
+    "nome": "Totoro",
+    "categorias": ["Geek", "Amigurumis"],
+    "tag": "Geek",
+    "imagem": "src/assets/produtos/totoro.webp",
+    "preco": "95,90",
+    "descricao": "Amigurumi feito à mão com acabamento detalhado. Ideal para presentear ou colecionar.",
+    "materiais": ["Fio 100% algodão", "Enchimento antialérgico", "Olhos com trava de segurança"],
+    "medidas": "Aprox. 18cm de altura",
+    "prazoProducaoDias": 10
   }
 ]
