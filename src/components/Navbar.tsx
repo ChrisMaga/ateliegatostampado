@@ -12,9 +12,8 @@ export default function Navbar() {
     () => [
       { label: "Início", to: "/" },
       { label: "Catálogo", to: "/catalogo" },
-      { label: "Sobre", to: "/about" },
-      // Se você ainda não tem rota de Blog, deixe como disabled
-      // Quando criar, troque para: { label: "Blog", to: "/blog" }
+      { label: "Sobre", to: null },
+        // Quando criar, troque para: { label: "Blog", to: "/blog" }
       { label: "Blog", to: null },
       { label: "Contato", to: "/contato" },
     ],
